@@ -1,0 +1,49 @@
+get:
+  tags:
+    - "Addresses"
+  summary: "Get one address."
+  description: "Get one address."
+  operationId: "getAddressById"
+  parameters:
+    - $ref: "#/components/parameters/Id"
+    - $ref: "#/components/parameters/Deleted"
+  responses:
+    200:
+      description: "Request OK."
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Addresses"
+    400:
+      $ref: "#/components/responses/400"
+    401:
+      $ref: "#/components/responses/401"
+    404:
+      $ref: "#/components/responses/404"
+    405:
+      $ref: "#/components/responses/405"
+  x-swagger-router-controller: "Addresses"
+delete:
+  tags:
+    - "Addresses"
+  summary: "Delete one address."
+  description: "Delete one address."
+  operationId: "deleteAddress"
+  parameters:
+    - $ref: "#/components/parameters/Id"
+  responses:
+    200:
+      description: "Request OK."
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/IdInteger"
+    400:
+      $ref: "#/components/responses/400"
+    401:
+      $ref: "#/components/responses/401"
+    404:
+      $ref: "#/components/responses/404"
+    405:
+      $ref: "#/components/responses/405"
+  x-swagger-router-controller: "Addresses"
