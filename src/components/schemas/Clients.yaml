@@ -1,0 +1,38 @@
+description: Client information.
+type: object
+properties:
+  refClient:
+    type: string
+  addresses:
+    type: array
+    items:
+      $ref: "#/components/schemas/Addresses"
+  addressesId:
+    type: array
+    items:
+      type: integer
+      format: int64
+  companyName:
+    type: string
+  email:
+    type: string
+  frequency:
+    type: string
+  group:
+    type: string
+  name:
+    type: string
+  nickname:
+    type: string
+  sector:
+    type: string
+  state:
+    type: string
+  stateGroup:
+    type: string
+  score:
+    type: string
+  typeClient:
+    type: string
+  vat:
+    type: string
