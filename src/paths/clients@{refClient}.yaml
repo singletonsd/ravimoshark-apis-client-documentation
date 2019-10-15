@@ -5,7 +5,7 @@ get:
   description: "Get one client."
   operationId: "getClientById"
   parameters:
-    - $ref: "#/components/parameters/RefClientQuery"
+    - $ref: "#/components/parameters/RefClient"
     - $ref: "#/components/parameters/Deleted"
   responses:
     200:
@@ -30,7 +30,7 @@ delete:
   description: "Delete one client."
   operationId: "deleteClient"
   parameters:
-    - $ref: "#/components/parameters/Id"
+    - $ref: "#/components/parameters/RefClient"
   responses:
     200:
       description: "Request OK."
